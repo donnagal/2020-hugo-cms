@@ -2,6 +2,11 @@
 title: Welcome to the 2020 template
 subtitle: 'Kudahuvadhoo, Central Province, Maldives'
 image: /img/image-home.jpeg
+video:
+  heading: This is the Video heading
+  image: /img/nerlify-logo.jpg
+  text: ..and some text is here
+  vsrc: 'https://www.youtube.com/embed/p6h-rYSVX90?start=122'
 blurb:
   heading: Dive in and have a look
   text: >-
