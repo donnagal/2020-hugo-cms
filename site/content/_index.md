@@ -1,14 +1,12 @@
 ---
-title: Welcome to the 2020 template
-subtitle: Welcome to the template
-image: /img/bg-01.jpeg
+title: 'Kudahuvadhoo, Central Province, Maldives'
+subtitle: Welcome to the 2020 template
+image: /img/image-home.jpeg
 blurb:
   heading: Heading Abc
   text: >-
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Unrivalled luxury, stunning white-sand beaches and an amazing underwater
+    world make Maldives an obvious choice for a true holiday of a lifetime.
 intro:
   heading: What we offer
   text: >-
