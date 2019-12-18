@@ -5,14 +5,9 @@ hero:
 intro:
   blurbs:
     - image: /img/cake-01.jpeg
-      text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level.
+      text: Mango Mousse
     - image: /img/cake-01.jpeg
-      text: |
-        ZOMG! So yum!
-    - image: /img/cake-01.jpeg
-      text: ABC 123
+      text: Salted Caramel Macaroon
     - image: /img/cake-02.jpeg
       text: Product 004
   description: |
