@@ -1,14 +1,15 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
+{{ partial "video-background" .Params.hero }}
+
 
 {{ partial "4-up" .Params.intro }}
 
 
 {{ with .Params.main }}
-<div class="mw7 center">
-  <div class="mw6 ph3 mb3">
-    <h3 class="f3 b lh-title mb2">{{ .heading }}</h3>
+<div class="container mx-auto">
+  <div class="leading-normal pb-8 text-grey-darker">
+    <h2 class="pt-32 pb-5 font-normal">{{ .heading }}</h2>
     <p>{{ .description }}</p>
   </div>
 </div>
@@ -17,14 +18,22 @@
 {{ partial "image-grid" . }}
 {{ end }}
 
-<div class="pb4">
+<div class="my-32 ">
   {{ range .Params.testimonials }}
     {{ partial "blockquote" . }}
   {{ end }}
 </div>
 
+
 <!-- Full-width image -->
-<img src="{{ .Params.full_image }}" alt="" class="db w-100">
+<div class="container mx-auto">
+  <div class="w-full text-center mb-20" data-aos="fade-up">
+      <img src="{{ .Params.full_image }}" alt="" class="w-2/1">
+  </div>
+  </div>
+
+
+
 
 {{ partial "table" .Params.pricing }}
 

@@ -1,21 +1,27 @@
-<div class="bg-grey-1 pv4">
-	<div class="ph3 mw7 center">
+<!-- text and image-->
+<section class="bg-gray-300 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
 
-		<div class="flex-l mhn2-l">
-			<div class="w-40-l ph2-l">
-				<h2 class="f2 b lh-title mb2">{{.heading}}</h2>
 
-				<p>{{.text}}</p>
-			</div>
+        <div class="flex content-center flex-wrap">
+            <div class="w-1/2">
+                  <img src="img/home-about-section.jpg" alt="" class="block">
+            </div>
+            <div class="w-1/2 text-center pt-24">
+              <div class="p-24">
+                  <h2 class="lg:text-3xl font-thin pb-2">
+                      {{.heading}}
+                    </h2>
+                    <p class="mt-2 leading-normal pb-8 text-gray-600">
+                    {{.text}}
+                    </p>
+                    <p class="pt-2">
+                      <a href="{{.buttonLink}}" class="bg-black hover:opacity-75 text-white px-8 py-4">
+                        {{.buttonText}}
+                      </a>
+                    </p>
+              </div>
+            </div>
+      </div>
 
-			<div class="w-60-l ph2-l">
-				<img src="img/home-about-section.jpg" alt="" class="mb3">
-			</div>
-		</div>
 
-		<div class="tc">
-			<a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
-		</div>
-
-	</div>
-</div>
+</section>

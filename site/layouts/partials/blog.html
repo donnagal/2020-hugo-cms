@@ -1,19 +1,17 @@
-<div class="bg-off-white pv4">
-	<div class="ph3 mw7 center">
+<!-- Blog -->
+<div class="container mx-auto pb-24" data-aos="fade-up" data-aos-duration="1000">
 
-		<h2 class="f2 b lh-title mb3">Latest stories</h2>
-
-		<div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
-			{{ range first 4 (where .Data.Pages "Type" "post") }}
-				<div class="ph1-ns w-50-ns flex">
-					{{ .Render "li" }}
-				</div>
-			{{ end }}
+	<h3 class="text-4xl font-thin text-center pb-10 pt-24">Latest stories</h3>
+		   
+	<div class="flex list-none">
+		{{ range (.Paginator 3).Pages.ByPublishDate.Reverse }}
+		<div class="w-1/2 px-10">
+			<div class="">
+				{{ .Render "li" }}
+			</div>
 		</div>
-
-		<div class="tc">
-			<a href="/post" class="btn raise">Read more</a>
-		</div>
-
-	</div>
+		{{ end }}
+	</div>	  
 </div>
+
+

@@ -1,18 +1,24 @@
-<div class="pv5 pv6-l ph3 bg-center cover" style="background-image: url('{{.imageUrl}}')">
-  <div class="mw7 center ph3">
-    <div class="db mb3">
-      <div class="mw7 relative bg-fix-primary mb3">
-        <h1 class="f2 f1-l b di lh-title mb3 white mw6 bg-primary">
-          {{.title}}
-        </h1>
-      </div>
-      <div class="mw7 relative bg-fix-primary">
+<header class="h-screen text-white bg-cover" style="background-image: url('{{.imageUrl}}')">
+
+    <div class="container flex flex-col h-full mx-auto">
+      <div class="flex-grow flex flex-col justify-center text-center">
+          
+        <div class="pb-5" data-aos="fade" data-aos-duration="3000">
+            <h1 class="inline-block lg:text-5xl" >{{.title}}</h1>
+        </div>
+        
+  
         {{ if .subtitle }}
-        <p class="b f4 di lh-title mb3 white mw6 bg-primary">
+        <h1 class="text-2xl" data-aos="fade" data-aos-duration="3000">
           {{.subtitle}}
-        </p>
+        </h1>
         {{ end }}
+          
+          <footer class="sm:mt-4">
+                <button type="button" class="scroll_down" id="scroll_down"></button>
+          </footer>
       </div>
     </div>
-  </div>
-</div>
+  </header>
+  
+  

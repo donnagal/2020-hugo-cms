@@ -1,10 +1,28 @@
-<form action="" class="flex-ns mb3">
 
-  <fieldset class="flex-auto mb2 mb0-ns mr2-ns" name="newsletter" action="newsletter-subscribe">
-    <input type="text" id="email" placeholder="Your email" class="w-100">
-    <label for="email">Your email</label>
-  </fieldset>
-
-  <button class="btn mb3 w-100 w-auto-ns mb0-ns raise" type="submit">Submit</button>
-
-</form>
+<!-- newsletter form -->
+<div class="flex flex-wrap">
+    <div class="w-full md:w-1/2">
+      <form action="">
+          <fieldset name="newsletter" action="newsletter-subscribe">
+            <input type="text" id="email" placeholder="Your email" 
+            class="transition 
+            focus:outline-0 
+            focus:bg-grey
+            focus:border-grey-500 
+            placeholder-grey-900 
+            bg-grey-darker 
+            py-2 
+            px-4
+            block w-full appearance-none ds-input">
+          </fieldset>
+                
+        </form>
+    </div>
+    <div class="w-full md:w-1/5">
+      <button class="
+      w-full bg-blue-700 hover:bg-blue-300 text-white font-bold 
+      p-2
+      " type="submit">Submit</button>
+    </div>  
+  </div>
+  

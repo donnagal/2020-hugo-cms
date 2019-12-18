@@ -1,87 +1,276 @@
-/*! TACHYONS v4.5.5 | http://tachyons.io */
-
-/*
- *
- *      ________            ______
- *      ___  __/_____ _________  /______  ______________________
- *      __  /  _  __ `/  ___/_  __ \_  / / /  __ \_  __ \_  ___/
- *      _  /   / /_/ // /__ _  / / /  /_/ // /_/ /  / / /(__  )
- *      /_/    \__,_/ \___/ /_/ /_/_\__, / \____//_/ /_//____/
- *                                 /____/
- *
- *    TABLE OF CONTENTS
- *
- *    1. External Library Includes
- *       - Reset.css | http://meyerweb.com/eric/tools/css/reset/
- *    2. Tachyons Modules
- *    3. Variables
- *       - Media Queries
- *       - Colors
- *    4. Debugging
- *       - Debug all
- *       - Debug children
- *
- */
-
-
-/* External Library Includes */
-@import './imports/_reset';
-
 /* Modules */
-@import './imports/_box-sizing';
-@import './imports/_images';
-@import './imports/_background-size';
-@import './imports/_background-position';
-@import './imports/_outlines';
-@import './imports/_borders';
-@import './imports/_border-radius';
-@import './imports/_border-style';
-@import './imports/_border-widths';
-@import './imports/_border-colors';
-@import './imports/_code';
-@import './imports/_coordinates';
-@import './imports/_clears';
-@import './imports/_display';
-@import './imports/_flexbox';
-@import './imports/_floats';
-@import './imports/_font-style';
-@import './imports/_font-weight';
-@import './imports/_forms';
-@import './imports/_heights';
-@import './imports/_line-height';
-@import './imports/_links';
-@import './imports/_lists';
-@import './imports/_max-widths';
-@import './imports/_widths';
-@import './imports/_overflow';
-@import './imports/_position';
-@import './imports/_opacity';
-@import './imports/_spacing';
-@import './imports/_text-decoration';
-@import './imports/_text-align';
-@import './imports/_text-transform';
-@import './imports/_type-scale';
-@import './imports/_typography';
-@import './imports/_utilities';
-@import './imports/_visibility';
-@import './imports/_white-space';
-@import './imports/_vertical-align';
-@import './imports/_states';
-@import './imports/_z-index';
-@import './imports/_styles';
-@import './imports/_buttons';
-@import './imports/_svg';
-@import './imports/_cms';
+@import './imports/_video';
+@import './imports/_btn_scrolldown';
+ 
+ 
+ body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
 
-/* Variables */
-/* Importing here will allow you to override any variables in the modules */
-@import './imports/_colors';
-@import './imports/_media-queries';
-@import './imports/_variables';
+@media (min-width: 576px) {
+  .lg\:text-9xl {
+    font-size: 5rem;
+  }
+  .lg\:h-70 {
+    height: 22rem;
+  }
+}
 
-/* Debugging */
-@import './imports/_debug-children';
-@import './imports/_debug-grid';
+.bg-blackest {
+  background-color: black;
+}
+.bg-dark-gradient {
+  background-image: linear-gradient(#01031c,#1b314d);
+}
 
-/* Uncomment out the line below to help debug layout issues */
-/*@import './imports/_debug';*/
+button:focus {
+  outline: none;
+}
+
+
+
+.z-100 {
+  z-index: 100 !important;
+}
+
+.hide {
+  display: none;
+}
+
+[class^="trans-"] .trans, [class*=" trans-"] .trans {
+  transition: all;
+}
+
+.trans {
+  transition: all 0.5s ease;
+}
+
+.trans-slow {
+  transition-duration: 1s;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+@media (max-width: 576px) {
+  .sm\:hide {
+    display: none;
+  }
+  .sm\:show {
+    display: block;
+  }
+  .sm\:h-fill {
+    height: -webkit-fill-available;
+  }
+}
+
+
+.bg-g-blue {
+  background-color: #1fc8db;
+  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
+.bg-g-purple {
+  background-color: #9e21ff;
+  background-image: linear-gradient(141deg, #ed21ff 0%, #9e21ff 51%, #9e21ff 75%);
+}
+
+.bg-img-parallax {
+  background-image: url("https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  height: 40vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-grayscale {
+  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -o-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+}
+
+
+
+.swiper-container-hero, .swiper-overlay-text {
+  height: 70vh;
+}
+
+.swiper-pagination-hero {
+  margin-top: -20px;
+  position: relative;
+  z-index: 10;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  top: 33% !important;
+  margin: auto 2rem;
+}
+
+.swiper-container {
+  height: 400px;
+}
+
+.swiper-pagination-bullet {
+  background: #ef9075;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #ef9075;
+}
+
+.display-table {
+  display: table;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.add-active.active nav {
+  transition: all 0.5s ease;
+  top: -90px;
+}
+
+
+nav .slide-toggle {
+  position: absolute;
+  top: 60px;
+  right: 70px;
+  transition: all 0.5s ease;
+  font-size: 12px;
+  line-height: 26px;
+}
+
+nav .slide-toggle:focus {
+  outline: 0;
+}
+
+nav .slide-toggle.active {
+  right: 340px;
+  transition: all 0.5s ease;
+}
+
+nav.open .nav-overlay {
+  background: rgba(0, 0, 0, 0.62);
+  transition: all 1s ease;
+  animation-delay: 3s;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  right: 0;
+  z-index: 0;
+}
+
+nav .menu {
+  float: right;
+  overflow: hidden;
+  display: none;
+  z-index: 1;
+  position: relative;
+}
+
+nav .menu-inner {
+  width: 300px;
+}
+
+nav.animate-add.active {
+  position: fixed;
+  right: 0;
+  z-index: 10;
+}
+
+.menu-wrapper {
+  margin: auto;
+  width: 39px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: 39px;
+  height: 3px;
+}
+
+.hamburger-menu {
+  transform: translateY(11px);
+  background: white;
+  transition: all 0.1s;
+}
+
+.hamburger-menu.animate {
+  background: rgba(255, 255, 255, 0);
+}
+
+.hamburger-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 11px;
+  background: white;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  background: white;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.dark .slide-toggle {
+  color: black;
+}
+
+.dark .hamburger-menu, .dark .hamburger-menu:before, .dark .hamburger-menu:after {
+  background-color: black;
+}
+
+.dark .hamburger-menu.animate {
+  background: rgba(255, 255, 255, 0);
+}
+
+@media only screen and (max-width: 600px) {
+
+  nav .slide-toggle {
+    transform: scale(0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 10px 18px 0px 18px;
+    z-index: 999;
+  }
+  .menu-inner {
+    width: 300px !important;
+    text-align: center;
+  }
+}

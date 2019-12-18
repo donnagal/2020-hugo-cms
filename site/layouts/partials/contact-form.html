@@ -1,33 +1,35 @@
-<!-- Contact -->
-<div class="mb4">
-  <h4 class="f3 b lh-title mb3 tc">Drop us a line below</h4>
-
-  <form action="">
-    <div class="flex-l mhn1-l">
-      <!-- Name -->
-      <div class="ph1-l w-50-l">
-        <fieldset>
-          <input type="text" id="name" name="name" placeholder="Name" class="w-100 mb2">
-          <label for="name">Name</label>
-        </fieldset>
+<!-- Contact form-->
+<div class="">
+    <div class="w-full">
+        <h4 class="leading-normal mt-10 mb-5">Drop us a line below</h4>
+      
+        <form action="">
+          <div class="flex">
+                <!-- Name -->
+            <div class="mr-2">
+              <fieldset>
+                <label class="" for="name">Name</label>
+                <input type="text" id="name" placeholder="Name" class="transition focus:outline-0 border border-transparent focus:bg-white focus:border-gray-500 placeholder-gray-500 bg-gray-200 py-2 pr-4 pl-10 block w-full appearance-none leading-normal ds-input">
+              </fieldset>
+            </div>
+                <!-- Email -->
+            <div class="mb-2">
+              <fieldset>
+                  <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" class="transition focus:outline-0 border border-transparent focus:bg-white focus:border-gray-500 placeholder-gray-500 bg-gray-200 py-2 pr-4 pl-10 block w-full appearance-none leading-normal ds-input">
+              </fieldset>
+            </div>
+          </div>
+      
+          <!-- Message -->
+          <fieldset>
+              <label for="message">Your message</label>
+            <textarea name="name" placeholder="Your message" rows="8" cols="80" id="message" class="transition focus:outline-0 border border-transparent focus:bg-white focus:border-gray-500 placeholder-gray-500 bg-gray-200 py-2 pr-4 pl-10 block w-full appearance-none leading-normal ds-input"></textarea>
+          </fieldset>
+              <!-- Button -->
+          <div class="tc">
+            <button type="submit" class="w-full bg-blue hover:bg-blue-700 text-white font-bold py-3 px-4">Submit</button>
+          </div>
+        </form>
       </div>
-      <!-- Email -->
-      <div class="ph1-l w-50-l">
-        <fieldset>
-          <input type="email" id="email" name="email" placeholder="Email" class="w-100 mb2">
-          <label for="email">Email</label>
-        </fieldset>
-      </div>
-    </div>
-
-    <!-- Message -->
-    <fieldset>
-      <textarea id="message" name="message" placeholder="Your message" rows="8" cols="80" class="w-100"></textarea>
-      <label for="message">Your message</label>
-    </fieldset>
-    <!-- Button -->
-    <div class="tc">
-      <button type="submit" class="btn w-100 w-auto-ns raise">Submit</button>
-    </div>
-  </form>
 </div>

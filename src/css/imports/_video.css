@@ -1,0 +1,150 @@
+.embed-responsive {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embed-responsive::before {
+  display: block;
+  content: "";
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed-responsive-21by9::before {
+  padding-top: 42.85714%;
+}
+
+.embed-responsive-16by9::before {
+  padding-top: 56.25%;
+}
+
+.embed-responsive-4by3::before {
+  padding-top: 75%;
+}
+
+.embed-responsive-1by1::before {
+  padding-top: 100%;
+}
+
+button.scroll_down {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 50px;
+  width: 30px;
+  bottom: 60px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+/* Video play button */
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.stroke-dotted {
+  opacity: 0;
+  stroke-dasharray: 4,5;
+  stroke-width: 1px;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: spin 4s infinite linear;
+          animation: spin 4s infinite linear;
+  transition: opacity 1s ease,  stroke-width 1s ease;
+}
+
+.stroke-solid {
+  stroke-dashoffset: 0;
+  stroke-dashArray: 300;
+  stroke-width: 4px;
+  transition: stroke-dashoffset 1s ease,  opacity 1s ease;
+}
+
+.icon {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  transition: -webkit-transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
+}
+
+#play:hover .stroke-dotted, .play:hover .stroke-dotted  {
+  stroke-width: 4px;
+  opacity: 1;
+}
+#play:hover .stroke-solid, .play:hover .stroke-solid {
+  opacity: 0;
+  stroke-dashoffset: 300;
+}
+#play:hover .icon, .play:hover .icon {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+
+
+#play {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+
+/* Background Video */
+.bg-video {
+  position: relative;
+  background-color: black;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+.bg-video video, .bg-video iframe {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  height: 300%;
+  top: -100%;
+}
+.bg-video .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+}
