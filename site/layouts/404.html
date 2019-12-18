@@ -1,6 +1,13 @@
 {{ define "main" }}
 
-<h1>Nothing Here...</h1>
-<h3><a href="{{ "/" | relURL }}">Go Home</a></h3>
+<div class="container mx-auto pt-32 text-center">
+    <div class="h-screen pt-32">
+        <h1 class="font-semibold text-6xl tracking-wide">404</h1>
+       
+        <p class="mb-10">Page not found</p>
+
+        <a class="bg-black hover:opacity-75 text-white px-8 py-4" href="{{ "/" | relURL }}">Go Home</a>
+    </div>
+</div>
 
 {{ end }}
