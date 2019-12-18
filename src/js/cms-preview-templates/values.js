@@ -5,15 +5,17 @@ import Jumbotron from "./components/jumbotron";
 
 const MediaBlock = ({heading, text, imageUrl, reverse}) => {
   const imageContainerClassName = reverse
-    ? "ph3-m w-50-m"
-    : "ph3-m w-50-m order-last-m";
-  return <div className="flex-m mhn3-m mb4">
+    ? "flex"
+    : "flex flex-row-reverse";
+  return <div className="mt-5">
     <div className={imageContainerClassName}>
-      <img src={imageUrl} alt="" className="db mb2" />
-    </div>
-    <div className="ph3-m w-50-m">
-      <h3 className="f3 b lh-title mb1">{heading}</h3>
-      <p>{text}</p>
+      <div className="w-1/2">
+        <img src={imageUrl} alt="" className="" />
+      </div>
+      <div className="w-1/2 bg-gray-300 p-5">
+        <h3 className="text-lg">{heading}</h3>
+        <p>{text}</p>
+      </div>
     </div>
   </div>;
 };
@@ -34,8 +36,8 @@ export default class ValuesPreview extends React.Component {
     
     return <div>
       <Jumbotron image={image} title={entry.getIn(["data", "title"])} />
-      <div className="bg-off-white pv4">
-        <div className="mw7 center ph3 pt4">
+      <div className="">
+        <div className="">
           {values.map(({text, heading, imageUrl}, i) =>
             <MediaBlock key={i} text={text} heading={heading} imageUrl={imageUrl} reverse={i % 2 === 0} />
           )}

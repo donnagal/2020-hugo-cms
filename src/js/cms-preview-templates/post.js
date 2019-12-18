@@ -6,19 +6,18 @@ export default class PostPreview extends React.Component {
     const {entry, widgetFor, getAsset} = this.props;
     let image = getAsset(entry.getIn(["data", "image"]));
 
-    return <div className="mw6 center ph3 pv4">
-      <h1 className="f2 lh-title b mb3">{ entry.getIn(["data", "title"])}</h1>
-      <div className="flex justify-between grey-3">
-        <div style={{
-          width: "80px",
-          height: "80px"
-        }}></div>
-        <p>{ format(entry.getIn(["data", "date"]), "ddd, MMM D, YYYY") }</p>
-        <p>Read in x minutes</p>
+    return <div className="p-10">
+      <h1 className="text-3xl font-thin pb-1">{ entry.getIn(["data", "title"])}</h1>
+      
+      <div className="text-gray-600 text-xs pb-8">
+        <p class="text-gray-800 text-sm pb-1">{ entry.getIn(["data", "description"]) }</p>
+        <p>
+          { format(entry.getIn(["data", "date"]), "ddd, MMM D, YYYY") } | Read in x minutes
+        </p>
       </div>
-      <div className="cms mw6">
-        <p>{ entry.getIn(["data", "description"]) }</p>
-        { image && <img src={ image } alt={ entry.getIn(["data", "title"])} /> }
+
+      <div className="text-gray-700">
+        { image && <img className="pb-10" src={ image } alt={ entry.getIn(["data", "title"])} /> }
         { widgetFor("body") }
       </div>
     </div>;
