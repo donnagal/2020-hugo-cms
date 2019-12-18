@@ -1,8 +1,6 @@
 import React from "react";
 import format from "date-fns/format";
 
-import Jumbotron from "./components/jumbotron";
-
 export default class PostPreview extends React.Component {
   render() {
     const {entry, getAsset} = this.props;
@@ -14,7 +12,32 @@ export default class PostPreview extends React.Component {
     }
 
     return <div>
-      <Jumbotron image={image} title={entry.getIn(["data", "title"])} />
+
+
+
+
+<section class="text-white p-8 bg-video">
+    <div class="container mx-auto">
+        <div class="flex-grow flex flex-col justify-center text-center">
+          <div class="overlay opacity-50"></div>
+          <iframe width="100%" height="100%"
+            src="https://www.youtube.com/embed/QyQ_6qbsvnY?&autoplay=1&loop=1&rel=0&showinfo=0&controls=0&color=white&iv_load_policy=3&mute=1&playlist=QyQ_6qbsvnY" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+
+          
+         <div class="absolute pin z-10 flex-grow flex flex-col justify-center text-center">
+              <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 mx-auto lg:py-24"  data-aos="fade-right" data-aos-duration="2000">
+                <h3 class="lg:text-9xl font-serif tracking-wide">{entry.getIn(["data", "hero", "heading"])}</h3>
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </section>
+
 
       <div className="bg-off-white pv4">
         <div className="ph3 mw7 center">
