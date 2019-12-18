@@ -3,8 +3,8 @@
 {{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Latest stories") }}
 
 <div id="stories" class="container mx-auto">
-  <ul class="py-24">
-      {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
+  <ul class="w-3/5 mx-auto">
+      {{ range (.Paginator 2).Pages.ByPublishDate.Reverse }}
           <div class="">
             {{ .Render "li"}}
           </div>

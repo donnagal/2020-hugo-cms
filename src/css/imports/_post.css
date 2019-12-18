@@ -1,0 +1,15 @@
+.post h2 {
+    font-size: 1.3rem;
+    color: black;
+    font-weight: thin;
+    padding-top: 24px;
+}
+
+.post ul {
+    list-style-type: disc;
+    padding: 1.5rem;
+}
+
+.post p {
+    padding-bottom: 1.5rem;
+}

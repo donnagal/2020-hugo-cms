@@ -1,6 +1,9 @@
 <li class="pt-5 pb-8 w-full">
 	<a href="{{ .RelPermalink }}" class="">
-		<h2 class="text-lg font-thin ">{{ .Title }}</h2>
+		<div class="w-full">
+			{{ if .Params.image }}<img class="" src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
+		</div>
+		<h2 class="text-lg font-thin pt-3">{{ .Title }}</h2>
 		<p class="text-xs text-gray-600 pb-3">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
 		<p class="text-gray-600">{{ .Description }}</p>
 		<p class="pt-3 pb-8">Read more →</p>
