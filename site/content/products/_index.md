@@ -5,29 +5,26 @@ hero:
 intro:
   blurbs:
     - image: /img/cake-01.jpeg
-      text: |
-        ZOMG! So yum!
-    - image: /img/cake-01.jpeg
       text: >
         We offer a small, but carefully curated selection of brewing gear and
         tools for every taste and experience level.
     - image: /img/cake-01.jpeg
       text: |
-        Love a great cup of coffee, but never knew how to make one?
+        ZOMG! So yum!
     - image: /img/cake-01.jpeg
-      text: >
-        All of the artwork on display there is for sale. The full price you pay
-        goes to the artist.
-  heading: What we offer
+      text: ABC 123
+    - image: /img/cake-02.jpeg
+      text: Product 004
   description: |
     This is a demo of text.
+  heading: What we offer
 main:
-  heading: Great coffee with no compromises
   description: >
     We hold our coffee to the highest standards from the shrub to the cup.
     That’s why we’re meticulous and transparent about each step of the coffee’s
     journey. We personally visit each farm to make sure the conditions are
     optimal for the plants, farmers and the local environment.
+  heading: Great coffee with no compromises
   image1:
     alt: A close-up of a paper filter filled with ground coffee
     image: /img/products-grid3.jpg
@@ -48,8 +45,8 @@ testimonials:
       stance on empowering farmers and transparency.
 full_image: /img/cake-02.jpeg
 pricing:
-  heading: Monthly subscriptions
   description: 'Choose one of our monthly subscription plans. '
+  heading: Monthly subscriptions
   plans:
     - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
       items:
