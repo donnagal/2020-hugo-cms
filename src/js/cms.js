@@ -10,7 +10,7 @@ import ProductsPreview from "./cms-preview-templates/products";
 import ValuesPreview from "./cms-preview-templates/values";
 import ContactPreview from "./cms-preview-templates/contact";
 
-CMS.registerPreviewStyle(styles, { raw: true });
+CMS.registerPreviewStyle("https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css");
 CMS.registerPreviewTemplate("home", HomePreview);
 CMS.registerPreviewTemplate("post", PostPreview);
 CMS.registerPreviewTemplate("products", ProductsPreview);
