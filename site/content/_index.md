@@ -1,9 +1,9 @@
 ---
-title: 'Kudahuvadhoo, Central Province, Maldives'
-subtitle: Welcome to the 2020 template
+title: Welcome to the 2020 template
+subtitle: 'Kudahuvadhoo, Central Province, Maldives'
 image: /img/image-home.jpeg
 blurb:
-  heading: Heading Abc
+  heading: Dive in and have a look
   text: >-
     Unrivalled luxury, stunning white-sand beaches and an amazing underwater
     world make Maldives an obvious choice for a true holiday of a lifetime.
