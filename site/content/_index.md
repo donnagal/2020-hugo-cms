@@ -1,14 +1,9 @@
 ---
-title: This is from the CMS
+title: Welcome to the 2020 template
 subtitle: Welcome to the template
 image: /img/bg-01.jpeg
-video:
-  heading: This is a video section
-  image: /img/nerlify-logo.jpg
-  text: 'This site is using Netlify Cms. Very easy to use. '
-  vsrc: 'https://www.youtube.com/embed/p6h-rYSVX90?start=122'
 blurb:
-  heading: From the CMS
+  heading: Heading Abc
   text: >-
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. We source all of our beans
