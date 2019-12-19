@@ -3,9 +3,9 @@
 
 	<h3 class="text-4xl font-thin text-center pb-10 pt-24">Latest stories</h3>
 		   
-	<div class="flex list-none">
+	<div class="flex flex-wrap list-none">
 		{{ range (.Paginator 3).Pages.ByPublishDate.Reverse }}
-		<div class="w-1/2 px-10">
+		<div class="lg:w-1/3 px-16 mx-auto">
 			<div class="">
 				{{ .Render "li" }}
 			</div>

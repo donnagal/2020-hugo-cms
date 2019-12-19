@@ -1,19 +1,17 @@
 
-<footer class="bg-gray-900">
-
-
-		<div class="flex content-center flex-wrap h-48">
-				<div class="w-1/3 p-2">
+<footer class="bg-gray-900 p-8 lg:p-0 absolute w-full">
+		<div class="flex content-center flex-wrap lg:h-48">
+				<div class="lg:w-1/3 w-full p-2">
 					<div class="text-gray-700 text-center p-2">
 						Footer ABC
 					</div>
 				</div>
-				<div class="w-1/3 p-2">
+				<div class="lg:w-1/3 w-full p-2">
 					<div class="text-gray-700 text-center p-2">
 							{{ partial "newsletter-form" . }}
 					</div>
 				</div>
-				<div class="w-1/3 p-2">
+				<div class="lg:w-1/3 w-full p-2">
 					<div class="text-gray-700 text-center p-2">
 							<ul>
 									{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
@@ -24,9 +22,6 @@
 					</div>
 				</div>
 			</div>
-
-
-
 </footer>
 
 {{ partial "svg" . }}

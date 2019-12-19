@@ -1,13 +1,13 @@
 <header class="h-screen text-white bg-cover" style="background-image: url('{{.imageUrl}}')">
 
     <div class="container flex flex-col h-full mx-auto">
-      <div class="flex-grow flex flex-col justify-center text-center">
-          
-        <div class="pb-5" data-aos="fade" data-aos-duration="3000">
-            <h1 class="inline-block lg:text-5xl" >{{.title}}</h1>
-        </div>
-        
-  
+      <div class="flex-grow flex flex-col justify-center text-center p-16">
+
+         <div class="absolute inset-0 bg-black opacity-25 h-full flex flex-col"></div>
+ 
+          <div class="pb-5" data-aos="fade" data-aos-duration="3000">
+              <h1 class="inline-block lg:text-5xl" >{{.title}}</h1>
+          </div>
         {{ if .subtitle }}
         <h1 class="text-2xl" data-aos="fade" data-aos-duration="3000">
           {{.subtitle}}
@@ -17,6 +17,7 @@
           <footer class="sm:mt-4">
                 <button type="button" class="scroll_down" id="scroll_down"></button>
           </footer>
+          
       </div>
     </div>
   </header>
