@@ -1,20 +1,21 @@
-<!-- 4 up -->
-<section class="py-32 bg-grey-200 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+<section class="py-32" data-aos="fade-up" data-aos-duration="1000">
         <h2 class="leading-tight text-lg font-thin text-center text-grey-800 lg:px-32 pb-20">
           <small class="block font-bold uppercase tracking-wide text-grey-dark text-sm leading-loose">{{.heading}}</small>
           {{.description}}
         </h2>
+
         <div class="container mx-auto">
-          <div class="sm:flex sm:flex-wrap">
+          <div class="flex">
 			
-			{{ range .blurbs }}
-            <article class="my-8 text-center sm:w-1/2 sm:px-4 lg:w-1/4">
+			    {{ range .blurbs }}
+            <article class="w-full p-3">
                 <img src="{{ .image }}">
-              <p class="pt-4 text-grey-800 text-sm leading-loose">
-					{{ .text }}
+              <p class="pt-2 text-grey-800 leading-loose">
+					  {{ .text }}
               </p>
             </article>
-			{{ end }}
+			    {{ end }}
           </div>
         </div>
+
       </section>
