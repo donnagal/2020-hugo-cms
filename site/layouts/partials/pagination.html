@@ -1,20 +1,26 @@
 {{ if gt .Paginator.TotalPages 1 }}
  
 <nav class="pb-32 flex">
-    {{ if .Paginator.HasNext }}
+
+    {{ if .Paginator.HasPrev }}
     <div class="w-1/2">
-        <a class="" title="Next Page" href="{{ .Paginator.Next.URL }}">
-            &larr; Previous
+        <a class="" title="Previous Page" href="{{ .Paginator.Prev.URL }}#stories">
+                &larr; Previous
         </a>
     </div>
     {{ end }}
+
+
+    {{ if .Paginator.HasNext }}
     <div class="w-1/2 text-right">
-        {{ if .Paginator.HasPrev }}
-        <a class="" title="Previous Page" href="{{ .Paginator.Prev.URL }}">
-            Next &rarr;
+        <a class="" title="Next Page" href="{{ .Paginator.Next.URL }}#stories">
+           Next &rarr;
         </a>
-        {{ end }}
     </div>
+    {{ end }}
+
+
+
 </nav>
  
 {{ end }}
