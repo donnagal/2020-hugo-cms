@@ -8,11 +8,11 @@
 			{{ .Content }}
 		</div>
 
-		<div class="mt-10">
+		<div class="mt-10 pb-20">
 	        	{{ range .Params.contact_entries }}
 				<div class="leading-normal">
-					<h4 class="pt-5">{{ .heading }}</h4>
-					<p class="">{{ .text }}</p>
+					<h4 class="pt-5 text-2xl">{{ .heading }}</h4>
+					<p class="pb-5">{{ .text }}</p>
 				</div>
 			{{ end }}
 		</div>

@@ -3,6 +3,7 @@
 @import './imports/_btn_scrolldown';
 @import './imports/_nav';
 @import './imports/_post';
+@import './imports/_form';
 
  body {
   font-family: 'Montserrat', sans-serif;

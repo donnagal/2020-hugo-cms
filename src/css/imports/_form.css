@@ -1,0 +1,47 @@
+.cognito .c-label {
+    font-family: 'Montserrat', sans-serif !important;
+}
+.cognito .c-forms-form input[type=text] {
+    padding: 0.9rem 0.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.cognito .c-editor textarea {
+    border: 1px solid #ddd;
+}
+
+.cognito .c-forms-form input[type=text]:focus,
+.cognito .c-editor textarea:focus { 
+    outline: 1px solid black;
+}
+
+.cognito .c-field.c-required .c-label:after {
+    color: black !important;
+    position: relative;
+    left: -4px;
+}
+
+.cognito .c-forms-form .c-validation {
+    position: relative;
+    top: -20px;
+}
+
+
+.cognito .c-forms-form button {
+    background-color: #2b6cb0 !important;
+    border-color:  #2b6cb0 !important;
+    border-radius: 0 !important;
+    font-family: 'Montserrat', sans-serif !important;
+    padding: 1rem 5rem !important;
+}
+
+.cognito a {
+    position: absolute;
+    top: -900px;
+}
+
+.c-forms-confirmation-message {
+    font-size: 1.5rem !important;
+    color: #718096 !important;
+}
