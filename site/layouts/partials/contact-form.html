@@ -1,7 +1,39 @@
-<!-- Contact form-->
-<div style="height: 600px;">
-  <div class="cognito">
-    <script src="https://services.cognitoforms.com/s/G4SNHaOoJEenvkX8ho-uiQ"></script>
-    <script>Cognito.load("forms", { id: "6" });</script>
-    </div>
-</div>
+ <!-- Contact form-->
+ <div class="pb-24">
+    
+  <h4 id="successMsg" class="leading-normal mt-10 mb-5 text-2xl">Success! Email has been sent.</h4>
+   
+    <div id="contact" class="w-full">
+        <h4 class="leading-normal mt-10 mb-5 text-2xl">Lets chat</h4>
+        <form name="contact" method="POST" data-netlify="true" action="/contact#success">
+          <div class="flex">
+            <!-- Name -->
+            <div class="mr-2">
+              <fieldset>
+                <label class="" for="name">Name*</label>
+                <input name="name" type="text" id="name" placeholder="Name" class="transition focus:outline-0 border border-transparent focus:bg-white focus:border-gray-500 placeholder-gray-500 bg-gray-200 py-2 pr-4 pl-10 block w-full appearance-none leading-normal ds-input" required>
+              </fieldset>
+            </div>
+                <!-- Email -->
+            <div class="mb-10">
+              <fieldset>
+                <label for="email">Email*</label>
+                <input name="email" type="email" id="email" placeholder="Email" class="transition focus:outline-0 border border-transparent focus:bg-white focus:border-gray-500 placeholder-gray-500 bg-gray-200 py-2 pr-4 pl-10 block w-full appearance-none leading-normal ds-input" required>
+              </fieldset>
+            </div>
+          </div>
+      
+          <!-- Message -->
+          <fieldset>
+              <label for="message">Your message*</label>
+            <textarea name="message" placeholder="Your message" rows="8" cols="80" id="message" class="transition focus:outline-0 border border-transparent focus:bg-white focus:border-gray-500 placeholder-gray-500 bg-gray-200 py-2 pr-4 pl-10 block w-full appearance-none leading-normal ds-input" required></textarea>
+          </fieldset>
+              <!-- Button -->
+          <div class="tc">
+            <button type="submit" class="w-full bg-blue hover:bg-blue-700 text-white font-bold py-3 px-4">Submit</button>
+          </div>
+        </form>
+
+
+      </div>
+ 

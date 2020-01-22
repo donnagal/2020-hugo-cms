@@ -2,10 +2,6 @@
 
 import "./css/main.css";
 
-// Say hello
-console.log("🦊 Hello! Edit me in src/index.js");
-
-
 
 //nav
 $(document).ready(function(){
@@ -26,6 +22,16 @@ $(window).bind('mousewheel', function(event) {
   }
   else {
     $(".add-active").addClass("active");
+  }
+});
+
+
+// Form success Message
+$(document).ready(function() {
+  $("#successMsg").hide();
+  if (window.location.href.indexOf("success") > -1) {
+    $("#contact").hide();
+    $("#successMsg").show();
   }
 });
 
@@ -65,4 +71,6 @@ $(function($){
   });
 
 });
+
+
 
